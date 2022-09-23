@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <title>Enchanted</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <nav class="navbar-inverse" style="position:sticky;top:0;z-index:99999;background-color: black;">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <img class="logo navbar-brand" src="DJK PROJECTS.png">
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><button onclick="nav('home-screen')">Playlist</button></li>
+                <li><button onclick="nav('favourites-screen')">Favourites</button></li>
+                <li><button onclick="nav('search-screen')">Search</button></li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <div class="container-fluid">
+        <div class="screen home-screen">
+            <h1 class="heading">Playlist</h1>
+            <button class="add-playlist btn" onclick="nav('add-playlist-screen')" type="submit">
+                <i class="material-icons">add_to_photos</i>
+            </button>
+
+            <ul id="playlist-list" class="col-xs-8">
+                
+            </ul>
+        </div>
+        <div class="screen add-playlist-screen">
+            <h1 class="heading">Create Playlist</h1>
+            <div class="col-xs-2"></div>
+            <div class="col-xs-8">
+                <input class="input col-xs-12" placeholder="Name" id="playlist-name">
+                <button class="btn btn-merge col-xs-12 submit-button" onclick="createPlaylist()" type="submit">Create Playlist</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="screen playlist-view"></div>
+
+    <div class="screen favourites-screen">
+        <h1 class="heading">Favourites</h1>
+        <ul class="style-list favourites"></ul>
+    </div>
+
+    <div class="screen search-screen">
+        <h1 class="heading">Search</h1>
+        <div class="col-xs-1"></div>
+        <div class="col-xs-10">
+            <input type="text" class="searchBar col-xs-12" onkeyup="search()" placeholder="Search..">
+            <ul class="list col-xs-12" id="myMenu">
+            
+            </ul>
+        </div>
+    </div>
+
+    <div class="screen add-to-playlist-screen">
+        <h1 class="heading">Choose Playlist</h1>
+        <ul class="song-list style-list col-xs-8"></ul>
+    </div>
+</body>
+
+</html>

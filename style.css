@@ -1,0 +1,152 @@
+.logo {
+    width: 75px;
+    height: 75px;
+    margin-left: 15px;
+}
+
+body {
+    font-family: cursive;
+    font-weight: 700;
+    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+}
+
+.navbar-nav button {
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 25px;
+    border-left: 2px solid white;
+    margin-top: 15px;
+}
+
+.add-playlist {
+    background-color: transparent;
+    margin-top: 30px;
+    position: absolute;
+    right: 20;
+}
+
+.save {
+    background-color: transparent;
+    margin-top: 90px;
+    position: absolute;
+    right: 20;
+}
+
+.add-playlist i, .save i {
+    color: white;
+    font-size: 50px;
+}
+
+#playlist-list, .songs, .list, .style-list {
+    list-style: none;
+    border-left: 4px solid white;
+    border-right: 4px solid white;
+    overflow-y: auto;
+    height: 70%;
+    position: relative;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: black;
+    border: 2px solid white;
+}
+
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+.playlist, .songs li, .list li {
+    background: transparent;
+    color: white;
+    font-size: 30px;
+    border-radius: 0;
+    outline: 0;
+    border-top: 4px solid white;
+}
+
+.playlist:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+.container-fluid {
+    margin-top: 30px;
+}
+
+.input {
+    height: 50px;
+    font-size: 25px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 0.1px solid white;
+}
+
+.btn-delete {
+    font-size: 25px;
+}
+
+.btn-merge {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 100px;
+}
+
+.btn-merge:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.input::placeholder {
+    font-size: 25px;
+    color: white;
+}
+
+.submit-button {
+    margin: 20px 0px;
+    height: 50px;
+    font-size: 25px;
+}
+
+.heading {
+    border-bottom: 2px solid white;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 50px;
+}
+
+.song {
+    font-size: 25px;
+}
+
+.list li {
+    padding: 10px 0px;
+}
+
+li {
+    color: white;
+}
+
+.searchBar, .searchBar:focus {
+    font-size: 18px;
+    padding: 11px;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    color: white;
+    border-radius: 75px;
+    padding-left: 30px;
+}
+
+.searchBar::placeholder {
+    color: white;
+}
+
+.list li a {
+    color: white;
+  }
